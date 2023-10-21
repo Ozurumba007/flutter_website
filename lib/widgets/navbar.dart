@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_website/utilis/colors.dart';
+import 'package:flutter_website/utilis/styles.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -57,8 +59,14 @@ class _NavBarState extends State<NavBar> {
           Container(
             height: 45,
             child: ElevatedButton(
+              style: borderButtonStyle,
               onPressed: () {},
-              child: const Text('Request a Demo'),
+              child: Text(
+                'Request a Demo',
+                style: GoogleFonts.baloo2(
+                  color: AppColors.primary,
+                ),
+              ),
             ),
           ),
         ],
