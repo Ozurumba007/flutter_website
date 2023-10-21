@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_website/utilis/colors.dart';
 
+import 'pages/home_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: AppColors.primary,
       ),
-      home: HomePage(),
+      home: Home(),
     );
   }
 }
