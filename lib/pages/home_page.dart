@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_website/widgets/navbar.dart';
 
 import '../utilis/constant.dart';
 
@@ -17,7 +18,13 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       body: SingleChildScrollView(
-        child: Container(),
+        child: Container(
+          child: const Column(
+            children: [
+              NavBar(),
+            ],
+          ),
+        ),
       ),
     );
   }
