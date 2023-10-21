@@ -65,7 +65,7 @@ class _NavBarState extends State<NavBar> {
               onPressed: () {},
               child: Text(
                 'Request a Demo',
-                style: GoogleFonts.baloo2(
+                style: GoogleFonts.hindSiliguri(
                   color: AppColors.primary,
                 ),
               ),
@@ -83,7 +83,7 @@ class _NavBarState extends State<NavBar> {
         onPressed: () {},
         child: Text(
           text,
-          style: GoogleFonts.baloo2(
+          style: GoogleFonts.hindSiliguri(
             color: Colors.black,
             fontSize: 18,
           ),
