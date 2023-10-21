@@ -4,6 +4,8 @@ import 'package:flutter_website/utilis/styles.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
+import '../utilis/constant.dart';
+
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
 
@@ -96,7 +98,7 @@ class _NavBarState extends State<NavBar> {
       height: 55,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/logo.png'),
+          image: AssetImage(logo),
         ),
       ),
     );
