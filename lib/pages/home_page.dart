@@ -3,6 +3,7 @@ import 'package:flutter_website/widgets/navbar.dart';
 
 import '../utilis/constant.dart';
 import 'containers/container1.dart';
+import 'containers/container2.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -20,14 +21,15 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          child: Column(
+          child: const Column(
             children: [
               NavBar(),
               Container1(),
+              Container2(),
             ],
           ),
         ),
       ),
     );
   }
-}
+} 
