@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -27,7 +28,7 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>flutter_website</title>
   <link rel="manifest" href="manifest.json">
@@ -39,21 +40,30 @@
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
+
 <body>
   <script>
-    window.addEventListener('load', function(ev) {
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
             appRunner.runApp();
           });
         }
       });
     });
   </script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js"; import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js"; const firebaseConfig = {
+      apiKey: "AIzaSyCmoyDF5b8s_1Q79DmJOzEQcOtvPSbac1E",
+      authDomain: "landing-page0724.firebaseapp.com", projectId: "landing-page0724", storageBucket: "landing-page0724.appspot.com", messagingSenderId: "637008078801", appId: "1:637008078801:web:d7685375c8f7dbacc222f0", measurementId: "G-B2KYEE0QJH"
+    }; const app = initializeApp(firebaseConfig); const analytics = getAnalytics(app);
+  </script>
 </body>
+
 </html>
